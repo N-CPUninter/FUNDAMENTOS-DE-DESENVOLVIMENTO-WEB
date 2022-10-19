@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parágrafos, quebra de linha e linha horizontal</title>
+</head>
+<body>
+    <h2>Parágrafos</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non qui ab ips
+laboriosam quos veritatis nihil doloribus temporibus nesciunt excepturi, f
+odit! Eveniet molestiae totam voluptate quisquam repellat dolorum, quibusd
+consectetur laudantium provident saepe nobis velit facilis explicabo delen
+quae perferendis commodi eaque sequi accusantium fugiat labore. At atque a
+suscipit ad, in, <br><br>incidunt necessitatibus dignissimos nulla laborio
+pariatur accusamus tempora vel. Aut facilis exercitationem impedit, quam 
+consequuntur sint quis porro ea ipsum dolore facere assumenda ducimus blan
+deleniti provident doloribus, dolores commodi debitis? Animi recusandae nu
+obcaecati ea omnis distinctio quaerat voluptates adipisci eius cum.</p>
+
+    <hr>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem sed ma
+incidunt omnis quia quam labore laborum nostrum, beatae assumenda mollitia
+quaerat dicta suscipit error minima autem dolores nesciunt, possimus accus
+laudantium! Harum voluptatum blanditiis placeat, iusto officia nam molesti
+maxime, impedit aliquid illo repellendus. Magni quos natus ut facere maior
+laborum nobis laudantium at maxime architecto officia odio dolor, modi id 
+at quaerat obcaecati fugiat quisquam quibusdam enim et quae. Officia facil
+error repudiandae deleniti sed impedit? Magnam assumenda, odio, excepturi 
+adipisci explicabo facere necessitatibus minima similique culpa rerum beat
+sed possimus consequatur id repellat aut? Explicabo illo illum perferendis
+dolores laborum repellendus, consequuntur labore delectus quos, sunt fugit
+itaque, eos voluptatibus modi. Mollitia cupiditate nulla facilis tenetur p
+Tempora unde obcaecati nemo nesciunt deleniti possimus tenetur, velit comm
+exercitationem ratione voluptas ipsum doloremque quo. Tempora enim ratione
+repellendus repellat doloremque, saepe non ipsam labore veritatis blanditi
+tenetur ex quos fugiat sed id iste eum officiis, facere eveniet nihil. Nul
+molestiae facere velit qui, fugiat exercitationem fuga natus officia bland
+laborum. Consectetur harum architecto, nesciunt nemo dicta eos maxime aliq
+ex repellendus rerum minus nostrum recusandae soluta quibusdam. Quo ducimu
+sit eum voluptas nam veniam, natus vitae accusantium nihil inventore, corp
+adipisci labore? Minus obcaecati mollitia explicabo. Earum tempora exercit
+odit repellat natus, rerum, necessitatibus nemo quo doloremque libero, ali
+itaque laudantium beatae voluptas! Autem cumque adipisci eaque ipsum solut
+doloremque nulla quo sint error laborum. Molestias fuga soluta voluptatibu
+Expedita aut, eaque quae reiciendis, natus in quam temporibus, officiis po
+laudantium unde nulla. Est vero, aperiam mollitia perferendis culpa expedi
+excepturi. Animi, voluptas pariatur nostrum id facere explicabo sit fugit 
+magni. Nesciunt quasi eveniet ipsum necessitatibus, officiis expedita sunt
+Distinctio blanditiis nemo suscipit enim voluptatum ipsam, quis, incidunt 
+consequuntur ut molestias deserunt magnam sit pariatur quo autem libero am
+delectus, ipsum saepe omnis modi. Rem quod aspernatur assumenda tempore no
+repellat quos. Adipisci nulla unde modi quod deserunt reprehenderit. Cumqu
+ad deleniti corporis, doloremque minus magnam ducimus suscipit quis nesciu
+quas possimus et totam sunt labore optio dolores ex! Saepe odio totam plac
+pariatur odit, sed recusandae eius. Enim quo a assumenda illum eos, magnam
+cumque iusto placeat illo molestias obcaecati vitae neque necessitatibus? 
+praesentium aut quaerat quasi cumque. Maxime, laudantium.s</p>
+</body>
+</html>
