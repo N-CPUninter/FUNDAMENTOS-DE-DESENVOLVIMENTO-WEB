@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pr-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+
+</head>
+<body>
+    <h2>Imagens</h2>
+
+    <img  src="../Imagens/praia.jpg" alt="praia" title="praia de..." style="width:50%;">
+    <br><br><br>
+    <img src="../Imagens/google.png" alt="logo Google">
+</body>
+</html>
