@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        div.static {
+            position: static;
+            border: 3px solid #3f21ad;
+        }
+
+        div.relative {
+            position: relative;
+            left: 30px;
+            border: 3px solid #3f21ad;
+        }
+
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #3f21ad;
+        }
+
+        div.relative1 {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid #3f21ad;
+        }
+
+        div.absolute1 {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #3f21ad;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>posição: estática;</h2>
+
+    <p>Um elemento com posição: estático; é sempre posicionado de acordo com o fluxo normal da página:</p>
+
+    <div class="static">
+        Aqui - position: static;
+    </div>
+
+
+    <h2>posição: relativa;</h2>
+
+    <p>Um elemento com posição: relativa; está posicionado em relação à sua posição normal:</p>
+
+    <div class="relative">
+        Aqui - position: relative;
+    </div>
+
+    <body>
+
+        <h2>posição: fixa;</h2>
+
+        <p>Um elemento com posição: fixo; está posicionado em relação à janela de visualização, o que significa que
+            sempre permanece no mesmo lugar, mesmo que a página seja rolada:</p>
+
+        <div class="fixed">
+            Aqui - position: fixed;
+        </div>
+
+        <body>
+
+            <h2>position: absolute;</h2>
+            
+            <p>Um elemento com posição: absoluto; é posicionado em relação ao ancestral posicionado mais próximo (em vez de posicionado em relação à janela de visualização, como fixo):</p>
+            
+            <div class="relative1">Aqui - position: relative;
+              <div class="absolute1">Aqui - position: absolute;</div>
+            </div>
+            
+    </body>
+</body>
+
+</html>
