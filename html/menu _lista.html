@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Removendo Bullets e Identação das Listas*/
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            width: 150px;
+        }
+
+        /*Agora Vamos posicionar os itens da lista, vamos definir o posicionamento com o valor relative, 
+porque depois iremos posicionar os sub-menus na posição absoluta em relação a eles.*/
+
+        ul li {
+            position: relative;
+        }
+
+        /*Agora vamos estilizar os sub-menus. Queremos cada sub-menu ao lado direito do seu elemento pai assim que passarmos o mouse sobre ele.
+Com as propriedades CSS Left e Top podemos posicionar cada item do sub-menu ao lado de seu item pai.
+Definimos o display: none; para que o sub-menu não fique visível por padrão.
+Listagem 5: Posicionando itens do sub-menu*/
+
+        li ul {
+            position: absolute;
+            left: 149px;
+            top: 0;
+            display: none;
+        }
+
+        /*Agora vamos dar uma aparência melhor aos nossos links. É importante definir display:block; para que cada link 
+ocupe toda a largura definida para ele na lista.
+Listagem 6: Melhorando aparência dos links*/
+
+        ul li a {
+            display: block;
+            text-decoration: none;
+            color: #E2144A;
+            background: #fff;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /*Agora vamos dar uma aparência melhor pro nosso menu quando passarmos o mouse em cima dele, vamos adicionar o código da listagem 10, 
+deixando os links em negrito, sublinhado e com um background.
+Listagem 10: Estilizando a Classe Hover*/
+
+        ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            background: #ccc;
+        }
+
+
+
+        /*Listagem 8: Exibindo o Submenu*/
+
+        li:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#home">Home</a>
+            <ul>
+                <li><a href="#news">Sobre nós</a></li>
+                <li><a href="#contato">Nossas Lojas</a></li>
+                </li>
+            </ul>
+    <li><a href="#news">Notícias</a></li>
+    <li><a href="#contato">Contato</a></li>
+    </ul>
+</body>
+
+</html>
