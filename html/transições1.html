@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        div {
+          width: 100px;
+          height: 100px;
+          background: blue;
+          transition: width 2s;
+        }
+        
+        #div1 {transition-timing-function: linear;}
+        #div2 {transition-timing-function: ease;}
+        #div3 {transition-timing-function: ease-in;}
+        #div4 {transition-timing-function: ease-out;}
+        #div5 {transition-timing-function: ease-in-out;}
+        
+        div:hover {
+          width: 300px;
+        }
+        </style>
+</head>
+<body>
+    <h1>Exemplos da propriedade transition-timing-function</h1>
+
+<p>Coloque o mouse sobre os elementos (div) abaixo:</p>
+
+<div id="div1">linear</div><br>
+<div id="div2">ease</div><br>
+<div id="div3">ease-in</div><br>
+<div id="div4">ease-out</div><br>
+<div id="div5">ease-in-out</div><br>
+</body>
+</html>
