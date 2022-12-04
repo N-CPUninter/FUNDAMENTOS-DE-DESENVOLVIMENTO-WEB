@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-content</title>
+    <style>
+        .flex {
+            display: flex;
+        }
+
+        .flex-start {
+            justify-content: flex-start;
+        }
+
+        .flex-end {
+            justify-content: flex-end;
+        }
+
+        .flex-center {
+            justify-content: center;
+        }
+
+        .flex-space-between {
+            justify-content: space-between;
+        }
+
+        .flex-space-around {
+            justify-content: space-around;
+        }
+
+        .item {
+            margin: 5px;
+            background: #228B22;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Justify-Content</h1>
+    <h2> justify-content: flex-start; <h2>
+            <section class="container flex flex-start">
+                <div class="item"> 1</div>
+                <div class="item">Teste 2</div>
+                <div class="item"> 3</div>
+            </section>
+
+    <h2> justify-content: flex-end; <h2>
+            <section class="container flex flex-end">
+                <div class="item"> 1</div>
+                <div class="item">Teste 2</div>
+                <div class="item"> 3</div>
+            </section>
+
+    <h2> justify-content: flex-center; <h2>
+            <section class="container flex flex-center">
+                <div class="item"> 1</div>
+                <div class="item">Teste 2</div>
+                <div class="item"> 3</div>
+            </section>
+
+    <h2> justify-content: space-between ; <h2>
+            <section class="container flex flex-space-between ">
+                <div class="item"> 1</div>
+                <div class="item">Teste 2</div>
+                <div class="item"> 3</div>
+            </section>
+
+    <h2> justify-content: space-around; <h2>
+            <section class="container flex flex-space-around ">
+                <div class="item"> 1</div>
+                <div class="item">Teste 2</div>
+                <div class="item"> 3</div>
+            </section>
+</body>
+
+</html>
