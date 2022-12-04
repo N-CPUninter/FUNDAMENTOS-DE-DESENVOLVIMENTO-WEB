@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 150px 700px 150px;
+            grid-template-rows: 60px 40px 200px 60px;
+            grid-gap: 5px 10px;
+        }
+
+        .topo {
+            grid-area: 1/1/2/4;
+        }
+
+        .menu {
+            grid-area: 2/1/3/4;
+        }
+
+        .principal {
+            grid-area: 3/2/4/3;
+        }
+
+        .esquerdo {
+            grid-area: 3/1/4/2;
+        }
+
+        .direito {
+            grid-area: 3/3/4/4;
+        }
+
+        .rodape {
+            grid-area: 4/1/5/4;
+        }
+
+       * {
+            font-size: 10px;
+            box-sizing: border-box;
+        }
+
+         body {
+            font: 2rem sans-serif;
+            background: white;
+            color: #333;
+            margin: 40px;
+        }
+
+        .container>* {
+            padding: 10px;
+            font: 20px sans-serif;
+            color: white;
+        }
+
+        .topo,
+        .rodape {
+            background: #0e0e0f;
+        }
+
+        .menu {
+            background: #939190;
+        }
+
+        .principal {
+            background: #636262;
+        }
+
+        .esquerdo {
+            background: #7b817d;
+        }
+
+        .direito {
+            background: #767372;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="topo">Topo</header>
+        <nav class="menu">Menu</nav>
+        <main class="principal">Principal</main>
+        <aside class="esquerdo">aside esquerdo</aside>
+        <aside class="direito">aside direito</aside>
+        <footer class="rodape">Rodapé</footer>
+    </div>
+
+</body>
+
+</html>
