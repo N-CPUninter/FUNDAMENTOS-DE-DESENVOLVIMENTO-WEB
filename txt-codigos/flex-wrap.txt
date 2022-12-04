@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-wrap</title>
+    <style>
+        .flex {
+            display: flex;
+        }
+
+        .flex-wrape {
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+
+        }
+
+        .flex-nowrape {
+            flex-wrap: nowrape;
+        }
+
+        .item {
+            margin: 5px;
+            background: #228B22;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .container {
+            max-width: 250px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex-wrap</h1>
+    <h2> flex-wrap: wrape; <h2>
+            <section class="container flex flex-wrape">
+                <div class="item">Teste 1</div>
+                <div class="item">Teste 2</div>
+                <div class="item">Teste 3</div>
+            </section>
+
+    <h2> flex-wrap: nowrape; <h2>
+            <section class="container flex flex-nowrape">
+                <div class="item">Teste 1</div>
+                <div class="item">Teste 2</div>
+                <div class="item">Teste 3</div>
+            </section>
+    <h2>wrap-reverse; <h2>
+            <section class="container flex wrap-reverse">
+                <div class="item">Teste 1</div>
+                <div class="item">Teste 2</div>
+                <div class="item">Teste 3</div>
+            </section>
+</body>
+
+</html>
