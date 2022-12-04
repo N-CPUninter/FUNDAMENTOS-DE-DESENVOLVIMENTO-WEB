@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 10px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: white;
+            color: #333;
+            margin: 40px;
+        }
+
+        .container>* {
+            padding: 10px;
+            font: 20px sans-serif;
+            color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 60px 40px 200px 60px;
+            grid-template-areas:
+                "topo     topo      topo"
+                "menu     menu      menu"
+                "esquerda principal direita"
+                "rodape   rodape    rodape";
+            grid-gap: 5px 10px;
+        }
+
+        .topo {
+            grid-area: topo;
+        }
+
+        .menu {
+            grid-area: menu;
+        }
+
+        .principal {
+            grid-area: principal;
+        }
+
+        .esquerda {
+            grid-area: esquerda;
+        }
+
+        .direita {
+            grid-area: direita;
+        }
+
+        .rodape {
+            grid-area: rodape;
+        }
+
+        .topo,
+        .rodape {
+            background: #5a5a5c;
+        }
+
+        .menu {
+            background: #696866;
+        }
+
+        .principal {
+            background: #2b2828;
+        }
+
+        .esquerda {
+            background: #2c2e2d;
+        }
+
+        .direita {
+            background: #868482;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="topo">Topo</header>
+        <nav class="menu">Menu</nav>
+        <main class="principal">Principal</main>
+        <aside class="esquerda">aside esquerdo</aside>
+        <aside class="direita">aside direito</aside>
+        <footer class="rodape">Rodapé</footer>
+    </div>
+
+</body>
+
+</html>
