@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Flex exemplos*/
+.flex {
+	display: flex;
+  }
+
+.flex-stretch {
+	align-items: stretch; 
+}
+.flex-start {
+	align-items: flex-start; 
+}
+.flex-end {
+	align-items: flex-end; 
+}
+.flex-center {
+	align-items: center; 
+}
+
+
+.item1{
+   flex: 1;
+    /* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+  	margin: 5px;
+	background: #228B22;
+	text-align: center;
+	font-size: 1.5em;
+}
+/* Flex Item */
+.item {
+	margin: 5px;
+	background: #228B22;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.container {
+	max-width: 430px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+  	height: 100px;
+}
+
+h1,h2 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+}
+    </style>
+</head>
+<body>
+    <h1>align-items</h1>
+<h2>align-items: stretch; </h2>
+<section class="container flex flex-stretch ">
+	<div class="item">Teste 1</div>
+	<div class="item">Teste 2 de exemplo para vocês </div>
+	<div class="item">Teste 3</div>
+	<div class="item">Teste 4</div>
+</section>
+
+<h2>align-items: flex-start </h2>
+<section class="container flex flex-start ">
+	<div class="item">Teste 1</div>
+	<div class="item">Teste 2 de exemplo para vocês </div>
+	<div class="item">Teste 3</div>
+	<div class="item">Teste 4</div>
+</section>
+
+<h2>align-items: flex-end</h2>
+<section class="container flex flex-end ">
+	<div class="item">Teste 1</div>
+	<div class="item">Teste 2 de exemplo para vocês </div>
+	<div class="item">Teste 3</div>
+	<div class="item">Teste 4</div>
+</section>
+
+
+<h2>align-items: center</h2>
+<section class="container flex flex-center">
+	<div class="item">Teste 1</div>
+	<div class="item">Teste 2 de exemplo para vocês </div>
+	<div class="item">Teste 3</div>
+	<div class="item">Teste 4</div>
+</section>
+
+</body>
+</html>
