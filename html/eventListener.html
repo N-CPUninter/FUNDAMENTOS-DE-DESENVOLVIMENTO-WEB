@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>addEventListener e removeEventListener</h2>
+    <p>Podemos adicionar mais de um evento em botões</p>
+    <div id="div">Hello World</div><br><br>
+    <div id="myID">Minha Div</div><br><br>
+    <button onClick="Mycolor()">Change Color</button><br><br>
+    <button onClick="removerEvento()">Remover</button>
+    <br><br>
+    <button id="myBtn">Teste</button>
+    <br><br>
+    <p id="teste"></p>
+    
+
+<script>
+    var x = document.getElementById("myBtn");
+    x.addEventListener("mouseover", umFunction);
+    x.addEventListener("click",doisFunction);
+    x.addEventListener("mouseout", tresFunction);
+    
+    function umFunction() {
+      document.getElementById("teste").innerHTML += "Mouse sobre!<br>";
+    }
+    
+    function doisFunction() {
+      document.getElementById("teste").innerHTML += "Clickado!<br>";
+    }
+    
+    function tresFunction() {
+      document.getElementById("teste").innerHTML += "Mouse fora!<br>";
+    }
+
+    var elemento= document.getElementById('div');
+    elemento.addEventListener('click',quatroFunction);
+    function quatroFunction() {
+       elemento.style.backgroundColor='green';
+
+    }
+    function removerEvento() {
+       elemento.removeEventListener('click', quatroFunction);
+    }
+    function Mycolor() {
+        var element = document.getElementById('myID');
+        element.style.backgroundColor='#900';
+}
+    </script>
+    
+</body>
+</html>
