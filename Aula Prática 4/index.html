@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo da Vinci</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #506E6A;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;/*centraliza o menu*/
+            gap: 20px;/*https://nekocalc.com/px-to-rem-converter*/
+        }
+
+
+        .imagem_leo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #506E6A;
+            color: white;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #506E6A;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506E6A 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #506E6A;
+            color: white;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_leo {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Biografia Leonardo da Vinci</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_leo">
+            <img src="leonardo-da-vinci.png">
+            <div class="infos">
+                <p><strong>Ocupação</strong> Pintor italiano</p>
+                <p>
+                    <strong>Data do Nascimento</strong>
+                    15/04/1452
+                </p>
+                <p><strong>Data da Morte</strong> 02/05/1519 (aos 67 anos)</p>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <h1>
+                Leonardo da Vinci
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat sequi sapiente nemo deserunt non
+                fugiat, accusamus voluptatum quasi dolorum commodi unde temporibus beatae facilis voluptate odit veniam
+                id
+                ducimus veritatis ex? Accusantium, delectus provident, nesciunt natus esse, neque labore nobis fugiat
+                reprehenderit quam eum ipsa consequuntur est. Distinctio aliquam pariatur corporis numquam in architecto
+                dicta quis exercitationem necessitatibus, repellat ex ipsa commodi soluta! Porro, qui odit? Dignissimos
+                nulla sed laudantium saepe adipisci quia. Reprehenderit, odio. Dolorem, perspiciatis. Quidem recusandae
+                optio officiis ducimus dolore architecto, ut sed enim unde, illum rerum vero ad vel labore saepe
+                quisquam?
+                Saepe sit, nihil ad asperiores eaque culpa, quae suscipit neque dolorum non quasi veritatis quisquam
+                minima
+                qui possimus vero sint nam architecto earum voluptatibus pariatur labore porro. Quod sed rerum iure
+                harum
+                quos eveniet, molestias explicabo corporis officia eos libero autem? Vel, minima blanditiis sapiente
+                officia
+                repudiandae, nam distinctio tempore consequatur culpa maiores facilis a modi dolorem saepe, commodi
+                aliquam.
+                Voluptatem suscipit, earum consequuntur dolores debitis maiores incidunt soluta alias nihil ratione? Ab
+                facere natus, doloremque hic consectetur commodi nobis veritatis beatae incidunt totam pariatur eius
+                assumenda odit molestias deleniti ratione vitae ullam cupiditate officiis obcaecati suscipit aut
+                nostrum.
+                Sit maxime adipisci dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat sequi sapiente nemo
+                deserunt non fugiat, accusamus voluptatum quasi dolorum commodi unde temporibus beatae facilis
+                voluptate odit veniam id ducimus veritatis ex? Accusantium, delectus provident, nesciunt natus
+                esse, neque labore nobis fugiat reprehenderit quam eum ipsa consequuntur est. Distinctio
+                aliquam pariatur corporis numquam in architecto dicta quis exercitationem necessitatibus,
+                repellat ex ipsa commodi soluta! Porro, qui odit? Dignissimos nulla sed laudantium saepe
+                adipisci quia. Reprehenderit, odio. Dolorem, perspiciatis. Quidem recusandae optio officiis
+                ducimus dolore architecto, ut sed enim unde, illum rerum vero ad vel labore saepe quisquam?
+                Saepe sit, nihil ad asperiores eaque culpa, quae suscipit neque dolorum non quasi veritatis
+                quisquam minima qui possimus vero sint nam architecto earum voluptatibus pariatur labore
+                porro. Quod sed rerum iure harum quos eveniet, molestias explicabo corporis officia eos libero
+                autem? Vel, minima blanditiis sapiente officia repudiandae, nam distinctio tempore consequatur
+                culpa maiores facilis a modi dolorem saepe, commodi aliquam. Voluptatem suscipit, earum
+                consequuntur dolores debitis maiores incidunt soluta alias nihil ratione? Ab facere natus,
+                doloremque hic consectetur commodi nobis veritatis beatae incidunt totam pariatur eius
+                assumenda odit molestias deleniti ratione vitae ullam cupiditate officiis obcaecati suscipit
+                aut nostrum. Sit maxime adipisci dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat sequi sapiente nemo
+                deserunt non fugiat, accusamus voluptatum quasi dolorum commodi unde temporibus beatae facilis
+                voluptate odit veniam id ducimus veritatis ex? Accusantium, delectus provident, nesciunt natus
+                esse, neque labore nobis fugiat reprehenderit quam eum ipsa consequuntur est. Distinctio
+                aliquam pariatur corporis numquam in architecto dicta quis exercitationem necessitatibus,
+                repellat ex ipsa commodi soluta! Porro, qui odit? Dignissimos nulla sed laudantium saepe
+                adipisci quia. Reprehenderit, odio. Dolorem, perspiciatis. Quidem recusandae optio officiis
+                ducimus dolore architecto, ut sed enim unde, illum rerum vero ad vel labore saepe quisquam?
+                Saepe sit, nihil ad asperiores eaque culpa, quae suscipit neque dolorum non quasi veritatis
+                quisquam minima qui possimus vero sint nam architecto earum voluptatibus pariatur labore
+                porro. Quod sed rerum iure harum quos eveniet, molestias explicabo corporis officia eos libero
+                autem? Vel, minima blanditiis sapiente officia repudiandae, nam distinctio tempore consequatur
+                culpa maiores facilis a modi dolorem saepe, commodi aliquam. Voluptatem suscipit, earum
+                consequuntur dolores debitis maiores incidunt soluta alias nihil ratione? Ab facere natus,
+                doloremque hic consectetur commodi nobis veritatis beatae incidunt totam pariatur eius
+                assumenda odit molestias deleniti ratione vitae ullam cupiditate officiis obcaecati suscipit
+                aut nostrum. Sit maxime adipisci dignissimos.</p>
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+    </div>
+</body>
+
+</html>
