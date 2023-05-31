@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Formulário</h1>
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    <br>
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" name="cidade">
+    <br>
+    <button type="button" onclick="enviarDados()">Enviar</button>
+  </form>
+  <script>
+    function enviarDados() {
+      // Captura os valores dos campos de texto
+      let nome = document.getElementById("nome").value;
+      let cidade = document.getElementById("cidade").value;
+      
+      // Armazena os valores em localStorage para uso posterior
+      localStorage.setItem("nome", nome);
+      localStorage.setItem("cidade", cidade);
+      
+      // Redireciona o usuário para a página que mostrará os dados
+      window.location.href = "dados2.html";
+    }
+  </script>
+</body>
+</html>
