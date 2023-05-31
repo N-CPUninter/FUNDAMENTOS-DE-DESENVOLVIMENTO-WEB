@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>Document</title>
+   
+</head>
+<body>
+
+    <script>
+        // Cria um array vazio para armazenar os números
+let numeros = [];
+
+// Pede ao usuário para digitar 10 números e armazena cada um no array
+for (let i = 0; i < 10; i++) {
+  numeros.push(parseInt(prompt(`Digite o ${i+1}º número:`)));
+}
+
+// Cria variáveis para armazenar a quantidade de números pares e ímpares
+let pares = 0;
+let impares = 0;
+
+// Percorre o array de números e verifica se cada um é par ou ímpar
+for (let i = 0; i < numeros.length; i++) {
+  if (numeros[i] % 2 === 0) {
+    pares++;
+  } else {
+    impares++;
+  }
+}
+
+// Exibe a quantidade de números pares e ímpares
+console.log(`Quantidade de números pares: ${pares}`);
+console.log(`Quantidade de números ímpares: ${impares}`);
+
+// Exibe a quantidade de números pares e ímpares
+alert(`Quantidade de números pares: ${pares}\nQuantidade de números ímpares: ${impares}`)
+//console.log(`Quantidade de números ímpares: ${impares}`);
+</script>
+
+</body>
+</body>
+</html>
