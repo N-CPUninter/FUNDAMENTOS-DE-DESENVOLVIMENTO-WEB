@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="enviar.php" method="POST">
+
+        <fieldset>FORMULÁRIO Types
+        </br>
+        </br>
+        <label for="nome"> Nome: </label>
+        <input type="text" name="nome" value="Digite seu nome" size="50" maxlength="50">
+        </br>
+                          
+        <label for="senha"> Senha: </label>
+         <input type="password" name="senha"  value="" size="20"  maxlength="8">
+         </br>
+              
+         
+         
+         <fieldset>
+         <label for="linguagem">Linguagem que tem Interesse</label>
+         </br>
+         </br>
+         <input type="checkbox" name="linguagem[]" value="cbuilder"> C++
+         
+         <input type="checkbox" name="linguagem[]" value="php"  checked >PHP
+        
+         <input type="checkbox" name="linguagem[]"  value="delphi">Delphi</br></br>
+         
+         </fieldset>
+         
+                 
+        
+         <fieldset>
+         <label for="linguagemescolhida">Linguagem que irá cursar agora</label>
+         </br>
+         </br>
+         <!--comentário -->
+         <input type="radio" name="curso" value="cbuilder">C++
+         
+         <input type="radio" name="curso" value="php" checked >PHP
+         
+         <input type="radio" name="curso" value="delphi">Delphi</br></br>
+         
+         </fieldset>
+          
+          
+         
+          <fieldset>
+            <label for="curso">Cursos que já fez na Escola</label>
+            </br>
+            </br>
+           <select name="escola">
+           <option value="bcb">C++Builder</option>
+           <option selected value="php">PHP</option>
+           <option value="delphi">Delphi</option>
+           </select>
+             
+            </fieldset>
+        
+          </br>
+          
+                      
+          <fieldset>
+          <label for="linguagemdomina">Linguagem que já domina</label>
+          </br>
+          </br>
+         <select name="D1" size = "10" multiple>
+         <option value="bcb">C++Builder</option>
+         <option selected value="php">PHP</option>
+         <option value="delphi">Delphi</option>
+         </select>
+         </fieldset>
+                
+           
+         <label for="mensagem">Mensagem:</label>
+         </br>
+         </br>
+           <textarea name="opiniao" rows="5" cols="40">Digite aqui sua msg...</textarea>
+          
+         </br>
+         </br>
+         
+         <input name="Submit" type="submit" id="Submit" value="Enviar">
+         </fieldset>
+         </form>
+         
+         
+</body>
+</html>

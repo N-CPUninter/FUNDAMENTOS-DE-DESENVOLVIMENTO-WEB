@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="table_complex.png" width="60%">
+    <br>
+    <table border="1" summary="Preços em reais  no 
+varejo e no atacado para laranjas e maçãs 
+importadas e nacionais nas cidades do
+ Rio de Janeiro e de São Paulo. 
+Existem dois níveis de cabeçalhos de colunas.">
+
+        <caption>
+            Preços em reais para laranjas e maçãs importadas e
+            nacionais nas cidades do Rio de Janeiro
+            e de São Paulo
+        </caption>
+
+        <thead>
+            <tr>
+                <td></td>
+                <th colspan="2" id="importada">Importada</th>
+                <th colspan="2" id="nacional">Nacional</th>
+            </tr>
+            <tr>
+                <td></td>
+                <th id="laranjas-imp">Laranjas</th>
+                <th id="macas-imp">Maçãs</th>
+                <th id="laranjas-nac">Laranjas</th>
+                <th id="macas-nac">Maçãs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="rio" colspan="5">Rio de Janeiro</th>
+            </tr>
+            <tr>
+                <!--Usar id e headers para linkar o conteúdo das células com os respectivos cabeçalhos.-->
+                <th headers="rio" id="atacado-rio">Atacado</th>
+                <td headers="importada laranjas-imp rio atacado-rio">
+                    1,00
+                </td>
+                <td headers="importada macas-imp rio atacado-rio">
+                    1,25
+                </td>
+                <td headers="nacional laranjas-nac rio atacado-rio">
+                    1,20
+                </td>
+                <td headers="nacional macas-nac rio atacado-rio">
+                    1,00
+                </td>
+            </tr>
+            <tr>
+                <th headers="rio" id="Varejo-rio">Varejo</th>
+                <td headers="importada laranjas-imp rio varejo-rio">
+                    2,00
+                </td>
+                <td headers="importada macas-imp rio varejo-rio">
+                    3,00
+                </td>
+                <td headers="nacional laranjas-nac rio varejo-rio">
+                    1,80
+                </td>
+                <td headers="nacional macas-nac rio atacado-rio">
+                    1,60
+                </td>
+
+                <tr>
+                    <th id="sp" colspan="5">São Paulo</th>
+                </tr>
+                <tr>
+                    <th headers="sp" id="atacado-ap">Atacado</th>
+                    <td headers="importada laranjas-imp sp atacado-sp">
+                        1,20
+                    </td>
+                    <td headers="importada macas-imp sp atacado-sp">
+                        1,30
+                    </td>
+                    <td headers="nacional laranjas-nac sp atacado-sp">
+                        1,00
+                    </td>
+                    <td headers="nacional macas-nac sp atacado-sp">
+                        0,80
+                    </td>
+                </tr>
+                <tr>
+                    <th headers="sp" id="Varejo-sp">Varejo</th>
+                    <td headers="importada laranjas-imp sp varejo-sp">
+                        1,60
+                    </td>
+                    <td headers="importada macas-imp sp varejo-sp">
+                        2,00
+                    </td>
+                    <td headers="nacional laranjas-nac sp varejo-sp">
+                        2,00
+                    </td>
+                    <td headers="nacional macas-nac sp atacado-sp">
+                        1,50
+                    </td>
+</body>
+
+</html>
