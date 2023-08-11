@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>\Posocionamento de grid</title>
+    <style>
+        html {
+	box-sizing: border-box;
+}
+body{
+  color: #F0F8FF;
+  font-size: 36px;
+  
+}
+box {
+  padding: 10px; 
+}
+.container {
+	display: grid;
+	grid-template-columns: 100px 50px 80px 200px;
+	grid-template-rows: 80px 100px 100px;
+	gap: 8px;
+}
+
+.box1 {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+.box2 {
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+.box1 {background: #363636;}
+.box2 {background: #4F4F4F;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Box 1</div>    
+        <div class="box box2">Box 2</div>    
+     </div>
+</body>
+</html>
