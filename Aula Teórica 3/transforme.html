@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      background: #ccc;
+      width: 300px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      opacity: .8;
+    }
+  </style>
+  <script>
+
+    function inicial(x) {
+      x.style.transform = "rotate(-20deg)";
+    }
+
+    function acao(x) {
+      x.style.transform = "rotate(20deg)";
+    }
+
+    function transXf(x) {
+      x.style.transform = "translateX(80px)";
+    }
+    function transXi(x) {
+      x.style.transform = "translateX(0px)";
+    }
+    function transYf(x) {
+      x.style.transform = "translateY(80px)";
+    }
+    function transYi(x) {
+      x.style.transform = "translateY(0px)";
+    }
+
+    function transf(x) {
+      x.style.transform = "translate(80px, 100px)";
+    }
+
+    function transi(x) {
+      x.style.transform = "translate(0px, 0px)";
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <h2> Exemplos</h2>
+  <table style="border: 1px, solid #ccc">
+    <tr>
+      <th>Transforme Horizontal</th>
+      <td>
+        <div onmouseover="transXf(this)" onmouseout="transXi(this)">Eu &#9829; CSS!</div>
+      </td>
+    </tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr>
+      <th>Transforme Vertical</th>
+      <td>
+        <div onmouseover="transYf(this)" onmouseout="transYi(this)">Eu &#9829; CSS!</div>
+      </td>
+    </tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+
+    <th>Transforme Horizontal/Vertical</th>
+    <td>
+      <div onmouseover="transf(this)" onmouseout="transi(this)">Eu &#9829; CSS!</div>
+    </td>
+    <tr>
+    </tr></tr>
+  </table>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2> Exemplo de Trasform vertical</h2>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <img src="../imagens/arvore.png" onmouseover="acao(this)" onmouseout="inicial(this)">
+</body>
+
+</html>
