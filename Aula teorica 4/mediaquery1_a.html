@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /*Isso garante que o preenchimento e a borda sejam incluídos na largura e altura totais dos elementos.*/
+        * {
+          box-sizing: border-box;
+        }
+        /*As colunas dentro de uma linha estão todas flutuando para a esquerda e, portanto, são retiradas do fluxo da página, e outros elementos serão colocados como se as colunas não existissem. Para evitar isso, adicionaremos um estilo que limpa o fluxo:*/
+        .row::after {
+          content: "";
+          clear: both;
+          display: block;
+        }
+         /* Todas essas colunas devem estar flutuando para a esquerda e ter um preenchimento de "15 px" */
+        [class*="col-"] {
+          float: left;
+          padding: 15px;
+        }
+        
+        html {
+          font-family: "Lucida Sans", sans-serif;
+        }
+        
+        .header {
+          background-color: #9933cc;
+          color: #ffffff;
+          padding: 15px;
+        }
+        
+        .menu ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+        
+        .menu li {
+          padding: 8px;
+          margin-bottom: 7px;
+          background-color: #33b5e5;
+          color: #ffffff;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        
+        .menu li:hover {
+          background-color: #0099cc;
+        }
+        
+        .aside {
+          background-color: #33b5e5;
+          padding: 15px;
+          color: #ffffff;
+          text-align: center;
+          font-size: 14px;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        
+        .footer {
+          background-color: #0099cc;
+          color: #ffffff;
+          text-align: center;
+          font-size: 12px;
+          padding: 15px;
+        }
+        
+         /* For desktop: */
+         .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        
+        @media only screen and (max-width: 768px) {
+          /* For mobile phones: */
+          [class*="col-"] {
+            width: 100%;
+          }
+        }
+
+
+        </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Curitiba</h1>
+      </div>
+      
+      <div class="row">
+        <div class="col-3 menu">
+          <ul>
+          <li>A Cidade</li>
+          <li>Parques</li>
+          <li>Museos</li>
+          <li>Cidades Vizinhas</li>
+          </ul>
+        </div>
+      
+        <div class="col-6">
+          <h1>A Cidade</h1>
+          <p>Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.</p>
+        </div>
+      
+        <div class="col-3">
+          <div class="aside">
+            <h2>Hoteis</h2>
+            <p>Estrelas.</p>
+            <h2>Localização</h2>
+            <p>Localização.</p>
+            <h2>Restaurantes</h2>
+            <p>Chefes premiados.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <p>Fins educacionais.</p>
+      </div>
+</body>
+</html>
